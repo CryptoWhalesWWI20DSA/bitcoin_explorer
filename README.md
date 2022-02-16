@@ -1,5 +1,7 @@
 Get useful informations for any block, transaction or address in the Bitcoin Blockchain
 
+The documentaionen for the used API you can find via the following link: https://btc.com/btc/adapter?type=api-doc
+
 # Addresses:
 
 ## Installation
