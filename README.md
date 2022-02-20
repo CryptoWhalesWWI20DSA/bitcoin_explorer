@@ -2,6 +2,23 @@ Get useful informations for any block, transaction or address in the Bitcoin Blo
 
 The documentaionen for the used API you can find via the following link: https://btc.com/btc/adapter?type=api-doc
 
+Because every output with bitcoin has the unit Sstoshi, this unit has to be converted. Therefore i used the Deno-Module: https://deno.land/x/units@v0.0.2
+
+# Usage of the Unit Converter
+
+```ruby
+import { UnitConverter } from "https://deno.land/x/units/mod-bitcoin.ts.ts";
+
+const testData: any[] = []
+
+testData.push({ from: 'Satoshi', amount: NUMBER YOU WANT TO CONVERT, to: 'Bitcoin', expected: 1 })
+
+for (const entry of testData) {
+    const result = UnitConverter.convert(entry.from, entry.amount, entry.to)
+    return result
+}
+```
+
 # Addresses:
 
 ## Installation
